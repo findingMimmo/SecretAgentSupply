@@ -68,6 +68,10 @@ nav span {
   padding: .75rem 0;
 }
 
+#menu2 {
+  display: none;
+}
+
 nav span a {
   color: white;
   text-decoration: none;
@@ -105,9 +109,13 @@ nav span a {
   padding: .5rem 0;
 }
 
+#contact {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .contact {
   width: 35%;
-  text-align: left;
   margin-top: 3rem;
 }
 
@@ -129,4 +137,79 @@ footer {
 
 footer .container {
   text-align: left;
+}
+
+/* at media query 1024px */
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+  nav .container {
+    justify-content: space-around;
+  }
+  #menu {
+    display: none;
+  }
+  #menu2 {
+    display: block;
+  }
+  .item {
+    width: 47%;
+  }
+  #glasses {
+    display: none;
+  }
+}
+
+/* at media query 470px */
+
+@media only screen and (max-width: 470px) {
+  .container {
+    width: 100%;
+  }
+  .moto {
+    height: 15rem;
+  }
+
+  .moto .container {
+    padding-top: 10rem;
+  }
+
+  .text {
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+
+  .text h3 {
+    font-size: .77rem;
+  }
+
+  .text h2 {
+    font-size: 1rem;
+  }
+  .gallery {
+    justify-content: center;
+  }
+
+  #contact {
+    margin-top: 3rem;
+  }
+
+  .item {
+    width:90%;
+  }
+
+  #watch {
+    display: none;
+  }
+
+  .contact {
+    width: 90%;
+    margin-top: .5rem;
+  }
+
+  footer .container {
+    text-align: center;
+  }
 }
